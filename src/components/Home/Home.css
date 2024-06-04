@@ -1,0 +1,96 @@
+.header-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.book-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.book-card{
+    border: solid 1px black;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    text-align: start;
+}
+.main-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.input-field{
+    margin: 30px;
+    width: 50%;
+    padding: 10px;
+}
+.input-container{
+    width: 80%;
+}
+.my-books-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons-container{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.delete-btn{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-btn{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1px black;
+}
+@media screen and (min-width: 320px) and (max-width: 576px){
+    .book-card{
+        width: 50%;
+    }
+    .my-books-container{
+        flex-direction: column;
+    }
+    .buttons-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container{
+        width: 100%;
+    }
+    .book-container{
+        width: 100%;
+    }
+    .buttons-container{
+        width: 50%;
+    }
+}
